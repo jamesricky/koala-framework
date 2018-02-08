@@ -1,0 +1,11 @@
+<div class="{{ rootElementClass }}">
+    {% block beforeParagraphs %}{% endblock %}
+    {% for paragraph in paragraphs %}
+        {{ paragraph.preHtml }}
+        <div class="{{ paragraph.class }}">
+            {{ renderer.component(paragraph.data) }}
+        </div>
+        {{ paragraph.postHtml }}
+    {% endfor %}
+    {% block afterParagraphs %}{% endblock %}
+</div>
