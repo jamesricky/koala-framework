@@ -1,0 +1,9 @@
+<div class="{{ rootElementClass }}">
+    {% block beforeSuccess %}{% endblock %}
+    {% block success %}
+        <p class="{{ 'success'|bemClass }}">
+            {{ placeholder.success }}
+        </p>
+    {% endblock %}
+    {% block afterSuccess %}{% endblock %}
+</div>

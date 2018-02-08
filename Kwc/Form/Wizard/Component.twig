@@ -1,0 +1,9 @@
+<div class="{{ rootElementClass }}">
+    {% block beforeForm %}{% endblock %}
+    {% block form %}
+        <div class="{{ 'form'|bemClass }}">
+            {{ renderer.component(currentForm) }}
+        </div>
+    {% endblock %}
+    {% block afterForm %}{% endblock %}
+</div>
