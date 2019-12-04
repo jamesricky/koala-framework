@@ -1,6 +1,7 @@
 .kwcClass {
     > .listItem {
         padding-bottom: 20px;
+
         .kwfUp-kwcTextImage {
             &.noText {
                 .kwfUp-kwcBasicImageEnlarge {
@@ -9,7 +10,7 @@
             }
         }
 
-        &.emptyContent {
+        &--emptyContent {
             display: none;
         }
     }
